@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Creates a PID file and handles SIGTERM, SIGINT, and SIGQUIT signals
 echo $$ > /var/run/myscript.pid
 
 handle_sigterm() {
